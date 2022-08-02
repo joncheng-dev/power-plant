@@ -8,6 +8,8 @@ import {
   blueFood,
   greenFood,
   yuckyFood,
+  hydrate,
+  superWater,
 } from "../src/plant.js";
 
 // User Interface Logic

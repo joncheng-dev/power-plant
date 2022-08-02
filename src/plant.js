@@ -1,6 +1,7 @@
 // Business logic
 export { stateControl };
 export { feed, blueFood, greenFood, yuckyFood };
+export { hydrate, superWater };
 
 const storeState = () => {
   let currentState = {};
