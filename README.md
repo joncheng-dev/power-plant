@@ -1,4 +1,4 @@
-# (Application Name)
+# Power Plant
 
 #### (Brief Description of Application)
 
@@ -8,8 +8,11 @@
 
 - HTML
 - CSS
+- Bootstrap
 - JavaScript
 - JQuery
+- webpack
+- Node.js
 
 ## Description
 
@@ -25,6 +28,6 @@
 
 ## License
 
-Copyright (c) YEAR Jonathan Cheng
+Copyright (c) 2022 Jonathan Cheng
 
 ## Contact Information

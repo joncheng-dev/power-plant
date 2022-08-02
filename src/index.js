@@ -2,7 +2,13 @@ import $ from "jquery";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/styles.css";
-import { stateControl, blueFood } from "./plant.js";
+import {
+  stateControl,
+  feed,
+  blueFood,
+  greenFood,
+  yuckyFood,
+} from "../src/plant.js";
 
 // User Interface Logic
 $(document).ready(function () {

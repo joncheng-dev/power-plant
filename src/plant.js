@@ -1,9 +1,10 @@
 // Business logic
-export { stateControl, blueFood };
+export { stateControl };
+export { feed, blueFood, greenFood, yuckyFood };
 
 const storeState = () => {
   let currentState = {};
-  return (stateChangeFunction = (state) => state) => {
+  return (stateChangeFunction) => {
     const newState = stateChangeFunction(currentState);
     currentState = { ...newState };
     return newState;
@@ -22,7 +23,12 @@ const changeState = (prop) => {
 
 const stateControl = storeState();
 
-const feed = changeState("soil")(1);
+// Watering
 const hydrate = changeState("water")(1);
-const blueFood = changeState("soil")(5);
 const superWater = changeState("water")(5);
+
+// Add Soil
+const feed = changeState("soil")(1);
+const blueFood = changeState("soil")(5);
+const greenFood = changeState("soil")(10);
+const yuckyFood = changeState("soil")(-5);
