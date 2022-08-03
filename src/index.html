@@ -6,6 +6,13 @@
   <body>
     <div class="container">
       <h1>Grow Your Plant</h1>
+      <h6>Select Plant</h6>
+      <label>
+        <input type="radio" name="plant" id="plantOne" value="0"></input> Plant 1
+      </label>
+      <label>
+        <input type="radio" name="plant" id="plantTwo" value="1"></input> Plant 2
+      </label>
       <h5>Soil</h5>
       <div class="grow-buttons">
         <button class="btn-success" id="feed">Add Soil</button>
@@ -25,6 +32,7 @@
       <button class="btn-secondary" id="show-state">Current Stats</button>
       <br />
       <br />
+      <h4><div id="results"></div></h4>
       <h4><div id="soil-value"></div></h4>
       <h4><div id="water-value"></div></h4>
     </div>

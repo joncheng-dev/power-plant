@@ -1,5 +1,5 @@
 // Business logic
-export { stateControl };
+export { stateControl, plant };
 export { feed, blueFood, greenFood, yuckyFood };
 export { hydrate, superWater };
 
@@ -22,12 +22,15 @@ const changeState = (prop) => {
   };
 };
 
-// Stores updated state
-const plantOne = {};
-const plantTwo = {};
-const stateControl = storeState();
-const stateControlOne = storeState(plantOne);
-const stateControlTwo = storeState(plantTwo);
+// Stores updated states of plants
+const plant = [];
+plant[0] = {};
+plant[1] = {};
+
+// Stores a state for specific plants
+const stateControl = [];
+stateControl[0] = storeState(plant[0]);
+stateControl[1] = storeState(plant[1]);
 
 // Watering
 const hydrate = changeState("water")(1);
@@ -39,6 +42,9 @@ const blueFood = changeState("soil")(5);
 const greenFood = changeState("soil")(10);
 const yuckyFood = changeState("soil")(-5);
 
-// Experiment with passing in different empty objects to storeState.
-const newStateOne = stateControlOne(hydrate);
-const newStateTwo = stateControlTwo(superWater);
+// // Experiment with passing in different empty objects to storeState.
+// plant[0] = stateControl[0](hydrate);
+// plant[1] = stateControl[1](superWater);
+
+// // This modifies the first plant a second time.
+// plant[0] = stateControl[0](blueFood);

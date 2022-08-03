@@ -1,5 +1,6 @@
 import {
   stateControl,
+  plant,
   feed,
   blueFood,
   greenFood,
