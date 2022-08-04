@@ -41,10 +41,3 @@ const feed = changeState("soil")(1);
 const blueFood = changeState("soil")(5);
 const greenFood = changeState("soil")(10);
 const yuckyFood = changeState("soil")(-5);
-
-// // Experiment with passing in different empty objects to storeState.
-// plant[0] = stateControl[0](hydrate);
-// plant[1] = stateControl[1](superWater);
-
-// // This modifies the first plant a second time.
-// plant[0] = stateControl[0](blueFood);
