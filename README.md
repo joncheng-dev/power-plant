@@ -1,6 +1,6 @@
 # Power Plant
 
-#### (Brief Description of Application)
+#### A simple, if unfinished game to take care of virtual plants.
 
 #### By Jonathan Cheng
 
@@ -16,6 +16,8 @@
 
 ## Description
 
+- Choose a plant to add soil or water to. Click on the buttons to give your plants different amounts of food and water.
+
 ## Setup/Installation Requirements
 
 - Clone this repository to your desktop
@@ -23,8 +25,8 @@
 
 ## Known Bugs
 
-- _Any known issues_
-- _should go here_
+- _Amount of plant food -- soil -- can eventually be negative if yuckyFood is clicked enough times._
+- _Plant properties start off as undefined when properties (soil or water) have not yet been added._
 
 ## License
 

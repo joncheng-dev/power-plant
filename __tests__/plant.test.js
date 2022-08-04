@@ -9,9 +9,6 @@ import {
   superWater,
 } from "../src/plant.js";
 
-// How do I know save state has worked?
-// -- Clicking button gives added value.
-
 // Clicking show state button shows current status
 describe("stateControl and object property modification functions (affecting soil) -- which uses storeState and changeState", () => {
   test("should call stateControl, which passes in blueFood (soil +5) -- changing the state of an object by a specific property and value, and then store the state change", () => {
